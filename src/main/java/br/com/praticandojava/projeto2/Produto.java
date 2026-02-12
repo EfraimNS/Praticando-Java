@@ -34,9 +34,10 @@ public class Produto {
         return "";
     }
 
-
-
-
-
+    @Override
+    public String toString() {
+        String detalhe = getDetalhes().isEmpty() ? "" : " : Detalhe: " + getDetalhes();
+        return String.format("%s | R$ %.2f%s", name, price, detalhe);
+    }
 
 }
