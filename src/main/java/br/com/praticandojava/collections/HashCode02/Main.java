@@ -10,6 +10,7 @@ public class Main {
         Produtos p2 = new Produtos(01,"Juliana");
 
 
+
         Set<Produtos> produtos = new HashSet<>();
         produtos.add(p1);
         produtos.add(p2);

@@ -5,9 +5,9 @@ import java.util.Objects;
 public class Pessoa {
 
     private String nome;
-    private long cpf;
+    private String cpf;
 
-    Pessoa(String nome, long cpf) {
+    Pessoa(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
@@ -16,7 +16,7 @@ public class Pessoa {
         return nome;
     }
 
-    public long getCpf() {
+    public String getCpf() {
         return cpf;
     }
 

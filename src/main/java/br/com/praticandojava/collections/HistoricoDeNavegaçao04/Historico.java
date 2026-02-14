@@ -15,7 +15,7 @@ public class Historico {
 
     public String consultarIndice(int indice) {
         if (indice < 0 || indice >= urls.size()) {
-            throw new RuntimeException("Não é possivel adicionar");
+            throw new RuntimeException("Indice inválido");
         }
         return urls.get(indice);
     }
@@ -32,4 +32,7 @@ public class Historico {
             System.out.println(i + "..." + urls.get(i));
         }
     }
+
+
+
 }

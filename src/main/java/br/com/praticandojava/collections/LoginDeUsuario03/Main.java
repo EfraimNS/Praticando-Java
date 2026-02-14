@@ -8,11 +8,14 @@ public class Main {
     public static void main(String[] args) {
 
 
+        Usuario goku = new Usuario("Goku","CAMEHAMEHAA123");
+        Usuario vegeta = new Usuario("Vegeta","Seuverme123");
+        Usuario popo = new Usuario("Senhor Popo","Popo123");
 
-        ArrayList<Usuario> lista = new ArrayList<>();
-        lista.add(new Usuario("Goku","CAMEHAMEHAA123"));
-        lista.add(new Usuario("Vegeta","Seuverme123"));
-        lista.add(new Usuario("Senhor Popo","Popo123"));
+        List<Usuario> lista = new ArrayList<>();
+        lista.add(goku);
+        lista.add(vegeta);
+        lista.add(popo);
 
         Usuario usuarioLogin = new Usuario("Vegeta","Seuverme123");
 
