@@ -5,6 +5,7 @@ public class Main {
         Historico historico = new Historico();
 
 
+
         historico.adcionarUrl("https://google.com");
         historico.adcionarUrl("https://youtube.com");
         historico.adcionarUrl("https://github.com");
@@ -14,12 +15,16 @@ public class Main {
 
 
 
+
+
         System.out.println("Consultar a url" + ".." + historico.consultarIndice(0));
         System.out.println("Consultar a url" + ".." + historico.consultarIndice(3));
 
         historico.limparAntigos(5);
 
         historico.exibirHistorico();
+
+
 
 
 
