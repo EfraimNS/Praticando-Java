@@ -1,0 +1,15 @@
+1° Relação chave- valor e busca performatica
+
+ 1 - criar uma classe main com o nome ControleDeEstoque - done
+ 2 - criar um Map com dois valores onde a chave = código do produto e valor = quantidade em estoque - done
+ 3 - deve permitir cadastrar um produto e a sua quantidade
+ 4 - deve atualizar a quantidade de um produto existente
+ 5 - deve ser possivel consultar a quantidade de um produto através do código
+ 6 - se o usuário tentar consultar um código que não existe, então deve exibir uma mensagem "Produto não localizado"
+
+
+ 2. Sorteio de Brindes Sem Repetição.
+
+ 1 - receber nomes até que o usuário digite parar
+ 2 - armazenar nomes
+ 3 - exibir apenas os 3 primeiros nomes ou todos os nomes caso so existam 3
