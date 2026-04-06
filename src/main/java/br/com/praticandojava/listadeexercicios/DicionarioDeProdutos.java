@@ -1,6 +1,7 @@
 package br.com.praticandojava.listadeexercicios;
 
 import java.util.HashMap;
+import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -18,7 +19,16 @@ public class DicionarioDeProdutos {
             System.out.println("3 - Listar");
             System.out.println("4 - Sair");
 
-            int opcao = sc.nextInt();
+            int opcao = 0;
+            try {
+                System.out.println("Digite a opção desejada");
+                opcao = sc.nextInt();
+                sc.nextLine();
+            } catch (InputMismatchException e) {
+                System.out.println("Digite um número válido");
+                sc.nextLine();
+                continue;
+            }
             sc.nextLine();
 
             switch (opcao) {
@@ -31,6 +41,7 @@ public class DicionarioDeProdutos {
 
                     if (map.containsKey(categoria)) {
                         System.out.println("Categoria já existe, produto será substituído");
+                        return;
                     }
                     map.put(categoria, produto);
                     System.out.println("Produto cadastrado com sucesso!");
@@ -50,7 +61,7 @@ public class DicionarioDeProdutos {
                 case 3:
                     for (String chave : map.keySet()) {
                         System.out.println("Categoria: " + chave + " | Produto: " + map.get(chave));
-                    }
+                    } // Verificar se map esta vazio
 
                     break;
                 case 4:
